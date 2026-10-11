@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">color-replacer logo</title>
+  <desc id="desc">Two color swatches connected by a replacement arrow</desc>
+  <rect width="128" height="128" rx="28" fill="#171a23" />
+  <rect x="22" y="25" width="46" height="46" rx="10" fill="#ff5d5d" />
+  <rect x="60" y="57" width="46" height="46" rx="10" fill="#3cffd7" />
+  <path d="M43 84h39m0 0-10-10m10 10-10 10" fill="none" stroke="#f7f8fb" stroke-linecap="round" stroke-linejoin="round" stroke-width="7" />
+</svg>

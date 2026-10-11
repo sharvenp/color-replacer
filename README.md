@@ -1,8 +1,14 @@
+
+
 # color-replacer
 
 A lightweight browser-based tool for replacing a selected color in an image with a new color. It is designed for quick edits, mockups, and simple creative color swaps without needing any server-side processing.
 
-https://sharvenp.github.io/color-replacer/
+<p align="center">
+   <img src="./public/logo.svg" alt="color-replacer logo" width="120" />
+   <br />
+   <a href="https://sharvenp.github.io/color-replacer/">Try it out!</a>
+</p>
 
 ## What it does
 
