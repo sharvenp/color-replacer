@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>color-replacer</title>
+    <meta
+      name="description"
+      content="Replace a selected color in an uploaded image with a new color using threshold and smoothing controls."
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <h1>color-replacer</h1>
+        </div>
+      </header>
+
+      <main class="app-grid">
+        <aside class="panel controls-panel">
+          <div class="panel-block">
+            <div id="dropZone" class="upload-button drop-zone" tabindex="0" role="button" aria-label="Upload image by clicking or dropping a file">
+              <span>Upload image</span>
+              <small>or drag & drop</small>
+              <input id="imageUpload" type="file" accept="image/*" />
+            </div>
+          </div>
+
+          <div class="panel-block color-pair">
+            <label class="field-group">
+              <span>Original color</span>
+              <div class="color-row">
+                <input id="sourceColor" type="color" value="#ff5d5d" />
+                <output id="sourceHex">#FF5D5D</output>
+              </div>
+            </label>
+
+            <label class="field-group">
+              <span>New color</span>
+              <div class="color-row">
+                <input id="targetColor" type="color" value="#3cffd7" />
+                <output id="targetHex">#3CFFD7</output>
+              </div>
+            </label>
+          </div>
+
+          <div class="panel-block">
+            <div class="range-header">
+              <label for="thresholdRange">Threshold</label>
+              <output id="thresholdValue">70</output>
+            </div>
+            <input id="thresholdRange" type="range" min="0" max="255" step="1" value="70" />
+          </div>
+
+          <div class="panel-block">
+            <div class="range-header">
+              <label for="smoothnessRange">Opacity smoothing</label>
+              <output id="smoothnessValue">28</output>
+            </div>
+            <input id="smoothnessRange" type="range" min="0" max="100" step="1" value="28" />
+          </div>
+
+          <div class="panel-block actions">
+            <button id="applyButton" class="action primary" type="button">Apply recolor</button>
+            <button id="downloadButton" class="action" type="button">Download PNG</button>
+          </div>
+        </aside>
+
+        <section class="panel preview-panel">
+          <div class="preview-meta">
+            <span class="pill">Live preview</span>
+          </div>
+
+          <div class="canvas-stage">
+            <canvas id="previewCanvas" width="960" height="640" aria-label="Image recolor preview"></canvas>
+          </div>
+
+          <div class="empty-state" id="emptyState">
+            <p>Upload an image to begin.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
