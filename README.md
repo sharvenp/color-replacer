@@ -2,6 +2,8 @@
 
 A lightweight browser-based tool for replacing a selected color in an image with a new color. It is designed for quick edits, mockups, and simple creative color swaps without needing any server-side processing.
 
+https://sharvenp.github.io/color-replacer/
+
 ## What it does
 
 - Upload an image from your device or drag and drop it into the app
@@ -66,11 +68,3 @@ This project was generated with GitHub Copilot as a lightweight local utility fo
 The tool is intended to help users experiment with simple recoloring workflows in a browser-based environment. It does not guarantee perfect color matching, accurate semantic recoloring, or production-grade image editing fidelity for all files or use cases. Results may vary depending on image content, lighting, contrast, and the selected threshold and smoothing settings.
 
 Users are responsible for reviewing the output before using it in professional, commercial, or publication workflows. This project is distributed as-is, without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, or non-infringement.
-
-## Example workflow
-
-1. Upload an image.
-2. Pick the color you want to replace.
-3. Set a threshold that matches the amount of color variation you want to affect.
-4. Adjust smoothing for a softer edge.
-5. Download the final image.
